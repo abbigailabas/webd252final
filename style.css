@@ -3,9 +3,9 @@
 }
 
 
-/*
+/*******
 headers
- */
+********/
 h1{
 	font-family: futura;
 }
@@ -17,24 +17,24 @@ h1,
 h2{
 	text-align: center;
 }
-/*
+/*********
 list style
- */
+*********/
 ul{
 	list-style: none;
 }
 
-/*
+/*********
 post style
- */
+*********/
 li{
 	border: 1px solid #B8BEDD;
 }
 
 
-/*
+/**********
 images
- */
+**********/
 #heroImage{
 	background-image: url(imgs/cntower.jpeg);
 	background-repeat: none; 

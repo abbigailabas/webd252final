@@ -25,26 +25,26 @@ $result = $db_connection->query(
 		<!-- </div> -->
 	</section>
 
-<div class="allPost">
-	<ul>
+	<div class="eachPost">
+		<ul>
 
-		<?php while($item = $result->fetch_assoc()): ?>
+			<?php while($item = $result->fetch_assoc()): ?>
 
-			<li>
-				<a href = "detail.php?ID=<?php echo $item['ID']?>">
-				<img class="thumbImage" src="imgs/cntower.jpeg" alt="">
-				<h3> <?php echo $item['Title']; ?> </h3>
-				<p> <?php echo $item['Short_Description']; ?> </p>
-				</a>
-			</li>
+				<li>
+					<a href = "detail.php?ID=<?php echo $item['ID']?>">
+					<img class="thumbImage" src="imgs/cntower.jpeg" alt="">
+					<h3> <?php echo $item['Title']; ?> </h3>
+					<p> <?php echo $item['Short_Description']; ?> </p>
+					</a>
+				</li>
 
-		<?php endwhile; ?>
+			<?php endwhile; ?>
 
 
-		<a href="RENE.php">RENE</a>
+			<a href="RENE.php">RENE</a>
 
-	</ul>	
-</div>
+		</ul>	
+	</div>
 
 </body>
 </html>
