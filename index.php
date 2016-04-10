@@ -18,11 +18,11 @@ $result = $db_connection->query(
 <body>
 	
 	<section id="heroImage">
-		<!-- <div class="heroText"> -->
-			<h1>Howdy! I'm Abby Abas</h1>
 		
-			<h2>This is my work.</h2>
-		<!-- </div> -->
+		<h1>Howdy! I'm Abby Abas</h1>
+		
+		<h2>This is my work.</h2>
+		
 	</section>
 
 	<div class="eachPost">
@@ -31,11 +31,17 @@ $result = $db_connection->query(
 			<?php while($item = $result->fetch_assoc()): ?>
 
 				<li>
+					
 					<a href = "detail.php?ID=<?php echo $item['ID']?>">
+					
 					<img class="thumbImage" src="imgs/cntower.jpeg" alt="">
+					
 					<h3> <?php echo $item['Title']; ?> </h3>
+					
 					<p> <?php echo $item['Short_Description']; ?> </p>
+					
 					</a>
+
 				</li>
 
 			<?php endwhile; ?>
