@@ -1,0 +1,67 @@
+*{
+	color: #6D6875;
+}
+
+
+/*
+headers
+ */
+h1{
+	font-family: futura;
+}
+h2{
+	font-family: newslab, sans-serif;
+}
+
+h1, 
+h2{
+	text-align: center;
+}
+/*
+list style
+ */
+ul{
+	list-style: none;
+}
+
+/*
+post style
+ */
+li{
+	border: 1px solid #B8BEDD;
+}
+
+
+/*
+images
+ */
+#heroImage{
+	background-image: url(imgs/cntower.jpeg);
+	background-repeat: none; 
+	background-size: cover;
+	height: 100vh;
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.thumbImage{
+	height: 100px;
+	width: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
