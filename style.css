@@ -50,10 +50,16 @@ images
 .thumbImage{
 	height: 100px;
 	width: 100px;
+	background-size: cover;
+}
+.detailImage{
+	height: 25%;
+	width: 50%;
 }
 
-
-
+/***********
+detail page
+***********/
 
 
 

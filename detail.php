@@ -30,11 +30,15 @@ $item = $result->fetch_assoc();
  <head>
  	<meta charset="UTF-8">
  	<title>Document</title>
+ 	<link rel="stylesheet" href="style.css">
  </head>
+ 
  <body id="detail">
  		
  		<h1><?php echo $item['Title']; ?></h1>
- 		<img src="" alt="">
+ 		
+ 		<img class="detailImage" src="imgs/cntower.jpeg" alt="">
+ 		
  		<p><?php echo $item['Long_Description']; ?></p>
 
 		<a id="" href="index.php">back home</a>
