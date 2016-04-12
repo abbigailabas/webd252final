@@ -46,7 +46,7 @@ $result = $db_connection->query(
 
 			<?php endwhile; ?>
 
-
+			<!-- button to RENE.php -->
 			<a href="RENE.php">RENE</a>
 
 		</ul>	

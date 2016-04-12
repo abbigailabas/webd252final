@@ -38,7 +38,7 @@ $item = $result->fetch_assoc();
  		<h1><?php echo $item['Title']; ?></h1>
  		
  		<img class="detailImage" src="imgs/cntower.jpeg" alt="">
- 		
+ 		<p><?php echo $item['Short_Description']; ?></p>
  		<p><?php echo $item['Long_Description']; ?></p>
 
 		<a id="" href="index.php">back home</a>

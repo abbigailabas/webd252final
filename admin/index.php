@@ -1,5 +1,7 @@
 <?php 
 
+
+include('login-check.php');
 include('../database.php');
 
 //query for all content
@@ -17,16 +19,24 @@ $result = $db_connection->query(
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
+	
 	<ul>
+	
 		<?php while($item = $result->fetch_assoc()): ?>
-		<li><a href="edit.php?id=<?php echo $item['ID']; ?>"><?php echo $item['Title'] ?></a></li>	
+	
+		<li><a href="edit.php?id=<?php echo $item['ID']; ?>">
+
+		<?php echo $item['Title'] ?></a></li>	
+	
 		<?php endwhile; ?>
+	
 	</ul>
 
 
 	<ul>
 		
-		<li><a href="add.php">add cat/ dog</a></li>
+		<li><a href="add.php">Add Cat/ Dog</a></li>
+		<li><a href="logout.php">Logout</a></li>
 		
 	</ul>
 	

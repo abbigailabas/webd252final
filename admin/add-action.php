@@ -2,7 +2,7 @@
 
 
 	// var_dump($_POST);
-	
+	include('login-check.php');
 	include('../database.php');
 
 	//prepare an insert statement with posted data
@@ -11,6 +11,7 @@
 	);
 
 	$statement->bind_param(
+		//sss means string, string, string
 		"sss",
 		$_POST['Title'],
 		$_POST['Short_Description'],

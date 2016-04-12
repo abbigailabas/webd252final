@@ -1,3 +1,11 @@
+<?php 
+
+
+include('login-check.php');
+
+
+ ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,15 +17,14 @@
 
 	<form method="post" action="add-action.php">
 		
-		<label>
-			Title
-			<input name="Title" type="text">
-		</label>
+		<label>Title</label>
+		<input name="Title" type="text">
 		
-		<label for="">
-			Short Description
+		
+		<label for="">Short Description</label>	
+			
 			<textarea name="Short_Description"></textarea>
-		</label>	
+		
 
 		<label for="">
 			Long Description
