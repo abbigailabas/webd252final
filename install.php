@@ -32,7 +32,7 @@ $db_connection->query("
 
 $id = 1;
 $username = 'admin';
-$password = 'password';
+$password = password_hash('password', PASSWORD_DEFAULT);
 
 $statement = $db_connection->prepare(
 	"INSERT INTO User(ID, Username, PAssword) VALUES(?,?,?)"

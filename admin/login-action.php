@@ -32,13 +32,15 @@ if ($result) {
 		$_SESSION['flag'] = TRUE;
 
 		// Redirect
-		header('location:')
+		header('location:index.php');
+		exit();
 	}
 
 
 }
 
-
+// back to the
+header('location:');
 
 
 
