@@ -21,5 +21,32 @@ $db_connection->query("
 
 
 
-var_dump($db_connection);
+$db_connection->query("
+	CREATE TABLE User(
+		ID INT AUTO_INCREMENT,
+		Username VARCHAR(255),
+		Password VARCHAR(255),
+		PRIMARY KEY(ID)
+	)
+");
+
+$id = 1;
+$username = 'admin';
+$password = 'password';
+
+$statement = $db_connection->prepare(
+	"INSERT INTO User(ID, Username, PAssword) VALUES(?,?,?)"
+	);
+
+$statement->bind_param(
+	'iss',
+	$id,
+	$username,
+	$password
+);
+
+$statement->execute();
+
+
+
  ?>
