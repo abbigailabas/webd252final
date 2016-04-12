@@ -25,8 +25,8 @@ if ($result) {
 	$user = $result->fetch_assoc();
 
 	// chech if password is correct
-	/if ($_POST['Password'] == $user['Password']) {
-
+	// if ($_POST['Password'] == $user['Password']) {  < this wont work anymore because hash !
+	if (password_verify($_POST['Password'], $user['Password'])) {
 		// Set flag in session
 		session_start();
 		$_SESSION['flag'] = TRUE;
