@@ -27,10 +27,10 @@ ul{
 /*********
 post style
 *********/
-li{
-	border: 1px solid #B8BEDD;
-}
-
+// li{
+// 	border: 1px solid #B8BEDD;
+// 	height: 25%;
+// }
 
 /**********
 images
@@ -47,9 +47,9 @@ images
 	justify-content: center;
 	align-items: center;
 }
-.thumbImage{
-	height: 100px;
-	width: 100px;
+.productImage{
+	height: 75%;
+	width: 50%;
 	background-size: cover;
 }
 .detailImage{
