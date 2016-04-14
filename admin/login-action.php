@@ -26,13 +26,16 @@ if ($result) {
 
 	// chech if password is correct
 	// if ($_POST['Password'] == $user['Password']) {  < this wont work anymore because hash !
+	// var_dump(password_verify($_POST['Password'], $user['Password']));
+	// die();
 	if (password_verify($_POST['Password'], $user['Password'])) {
 		// Set flag in session
+
 		session_start();
-		$_SESSION['flag'] = TRUE;
+		$_SESSION['flag'] = true;
 
 		// Redirect
-		header('location:index.php');
+		header('location: index.php');
 		exit();
 	}
 

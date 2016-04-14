@@ -1,7 +1,7 @@
 <?php 
+include('commons/head.php');
 
 
-include('login-check.php');
 include('../database.php');
 
 //query for all content
@@ -9,7 +9,7 @@ $result = $db_connection->query(
 	"SELECT * FROM Content"
 );
 
-include('commons/head.php');
+
 
  ?>
 	

@@ -34,7 +34,7 @@ include('commons/head.php');
 
 			<button type="submit" class="waves-effect waves-light btn orange lighten-3">Add Product</button>
 
-			<a class="waves-effect waves-light btn orange lighten-3" href="../admin/index.php">Back</a>
+			<a class="waves-effect waves-light btn orange lighten-3" href="../admin/index.php">Cancel</a>
 
 		</form>
 

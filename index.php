@@ -19,9 +19,9 @@ $result = $db_connection->query(
 	
 	<section id="heroImage">
 		
-		<h1>Howdy! I'm Abby Abas</h1>
+		<h1>Happy Hammock</h1>
 		
-		<h2>This is my work.</h2>
+		<h2>swing happily</h2>
 		
 	</section>
 

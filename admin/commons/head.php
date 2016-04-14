@@ -1,3 +1,7 @@
+<?php session_start(); 
+
+include('login-check.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,12 +12,16 @@
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
-	<nav>
-	    <div class="nav-wrapper">
-	      <a href="#" class="brand-logo">Happy Hammock</a>
-	      <ul id="nav-mobile" class="right hide-on-med-and-down">
-	        
-	        <li><a href="logout.php">Log Out</a></li>
-	      </ul>
-	    </div>
- 	</nav>
+	<?php if (isset($_SESSION['flag']) && $_SESSION['flag'] == true): ?>
+		<nav>
+		    <div class="nav-wrapper">
+		      <a href="#" class="brand-logo">Happy Hammock</a>
+		      <ul id="nav-mobile" class="right hide-on-med-and-down">
+		      
+		        <li><a href="logout.php">Log Out</a></li>
+
+		      </ul>
+		    </div>
+	 	</nav>
+	<?php endif; ?>
+
