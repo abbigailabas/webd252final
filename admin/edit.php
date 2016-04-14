@@ -7,14 +7,14 @@ include('../database.php');
 //Query for specific cat or dog
 $statement = $db_connection->prepare(
 	"SELECT * FROM Content WHERE ID=?"
-);
+	);
 
 
 //replace ? with the actual id
 $statement->bind_param(
 	'i',
 	$_GET['id']
-);
+	);
 
 //run the SQL query
 $statement->execute();
@@ -25,36 +25,43 @@ $result = $statement->get_result();
 //load first row
 $item = $result->fetch_assoc();
 
- ?>
+include('commons/head.php');
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Edit cat dog</title>
-</head>
-<body>
-	
+?>
+<div class="container">
+	<div class="row">
+		<form method="post" action="edit-action.php" class="col s12">
 
-	<form method="post" action="edit-action.php">
+			<div class="row">
+				<div class="input-field col s6">
+					<input name="Title" placeholder="Title" id="Title" type="text" class="validate" value="<?php echo $item['Title']; ?>">
+					<label for="Title">Product Title</label>
+				</div>
+			</div>
 
-		<input name="ID" type="hidden" value="<?php echo $item['ID']; ?>">
-		
-		<label>Title</label>
-		<input name="Title" type="text" value="<?php echo $item['Title']; ?>">
-		
-		
-		<label for="">Short Description</label>		
-		<textarea name="Short_Description"><?php echo $item['Short_Description']; ?></textarea>
-		
+			<div class="row">
+				<div class="input-field col s12">
+					<textarea id="ShortDescription" class="materialize-textarea" name="Short_Description"><?php echo $item['Short_Description']; ?></textarea>
+					<label for="ShortDescription">Short Description</label>		
+				</div>
+			</div>
 
-		<label for="">Long Description</label>	
-		<textarea name="Long_Description"><?php echo $item['Long_Description']; ?></textarea>
-		
+			<div class="row">
+				<div class="input-field col s12">
+					<textarea id="LongDescription" class="materialize-textarea" name="Long_Description"><?php echo $item['Long_Description']; ?></textarea>
+					<label for="LongDescription">Long Description</label>	
+				</div>
+			</div>
 
-		<!-- <input type="submit" value="update catdog"> -->
-		<button type="submit">Update catdog</button>
+			<input name="ID" type="hidden" value="<?php echo $item['ID']; ?>">
 
-	</form>
-</body>
-</html>
+			<button type="submit" class="waves-effect waves-light btn orange lighten-3">Submit</button>
+
+			<a class="waves-effect waves-light btn orange lighten-3" href="../admin/index.php">Back</a>
+
+		</form>
+	</div>
+</div>
+
+
+<?php include('commons/footer.php'); ?>
