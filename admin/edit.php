@@ -30,7 +30,7 @@ $item = $result->fetch_assoc();
 ?>
 <div class="container">
 	<div class="row">
-		<form method="post" action="edit-action.php" class="col s12">
+		<form method="post" action="edit-action.php" class="col s12" enctype="multipart/form-data">
 
 			<div class="row">
 		
@@ -97,8 +97,12 @@ $item = $result->fetch_assoc();
 			<button type="submit" class="waves-effect waves-light btn orange lighten-3">Submit</button>
 
 			<a class="waves-effect waves-light btn orange lighten-3" href="../admin/index.php">Back</a>
-
+			
+			<a class="waves-effect waves-light btn orange lighten-3" href="delete-action.php?ID=<?php echo $item['ID']; ?>">delete</a>
 		</form>
+
+		
+
 	</div>
 </div>
 
