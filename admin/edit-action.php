@@ -3,7 +3,7 @@
 
 include('login-check.php');
 include('../database.php');
-
+include('commons/head.php');
 
 // prepare UPDATE SQL statement
 $statement = $db_connection->prepare(
@@ -27,14 +27,22 @@ $statement->execute();
 
 
 
- ?><!DOCTYPE html>
- <html lang="en">
- <head>
+?><!DOCTYPE html>
+<html lang="en">
+<head>
  	<meta charset="UTF-8">
  	<title>Document</title>
- </head>
- <body>
- 	<h1>cat dog Updated!</h1>
- 	<a href="index.php">back to menu</a> <!-- index menu in the admin folder -->
- </body>
- </html>
+</head>
+<body>
+
+<div class="container">
+	<div class="row">
+ 		<h1>New Hammock Product Added!</h1>
+ 		<a href="index.php" class="waves-effect waves-light btn orange lighten-3">back to menu</a> <!-- index menu in the admin folder -->
+	</div>
+</div>
+
+</body>
+</html>
+
+

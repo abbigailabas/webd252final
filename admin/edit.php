@@ -1,6 +1,6 @@
 <?php 
-
 include('login-check.php');
+include('commons/head.php');
 include('../database.php');
 
 
@@ -25,7 +25,7 @@ $result = $statement->get_result();
 //load first row
 $item = $result->fetch_assoc();
 
-include('commons/head.php');
+
 
 ?>
 <div class="container">
@@ -52,6 +52,24 @@ include('commons/head.php');
 					<label for="LongDescription">Long Description</label>	
 				</div>
 			</div>
+
+
+			<div class="row">
+				 <!-- upload image for post -->
+      <div class="file-field input-field">
+        <div class="btn">
+          <span>image</span>
+          <input id="image" name="image" type="file" accept="image/*" placeholder="test" required>
+        </div>
+        <div class="file-path-wrapper">
+          <input class="file-path validate" type="text" placeholder="test!">
+        </div>
+      </div>
+			</div>
+
+
+
+
 
 			<input name="ID" type="hidden" value="<?php echo $item['ID']; ?>">
 

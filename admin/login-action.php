@@ -32,7 +32,9 @@ if ($result) {
 		// Set flag in session
 
 		session_start();
-		$_SESSION['flag'] = true;
+		$_SESSION['flag'] = TRUE;
+		$_SESSION['username'] = $user['Username'];
+
 
 		// Redirect
 		header('location: index.php');
@@ -43,7 +45,7 @@ if ($result) {
 }
 
 // back to the
-header('location:');
+header('location: login.php');
 
 
 

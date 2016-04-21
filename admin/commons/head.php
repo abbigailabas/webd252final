@@ -1,7 +1,3 @@
-<?php session_start(); 
-
-include('login-check.php');
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
