@@ -6,7 +6,9 @@ include('commons/head.php');
 
 <div class="container">
 	<div class="row">
-	<h2>Add New Product Bitch!</h2>
+	
+	<h2>Add New Product!</h2>
+		
 		<form method="post" action="add-action.php" class="col s12" enctype="multipart/form-data">
 
 			<div class="row">

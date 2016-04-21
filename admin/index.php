@@ -29,20 +29,20 @@ $result = $db_connection->query(
 						<div class="card-image waves-effect waves-block waves-light">
 							<img class="activator" src="../uploads/<?php echo $item['Large_Image'] ?>">
 						</div>
+
 						<div class="card-content">
 							<span class="card-title activator grey-text text-darken-4">
 								<?php echo $item['Title'] ?>
 							</span>
-							
 							<p><a href="edit.php?id=<?php echo $item['ID']; ?>">EDIT</a></p>
 						</div>
+						
 						<div class="card-reveal">
 							<h5>Short Description</h5>
 							<p><?php echo $item['Short_Description'] ?></p>
 							<h5>Long Description</h5>
 							<span class="card-title activator grey-text text-darken-4"><i class="material-icons right">close</i></span>
 							<?php echo $item['Long_Description'] ?>
-
 							<p><a href="edit.php?id=<?php echo $item['ID']; ?>">EDIT</a></p>
 						</div>
 						

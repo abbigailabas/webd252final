@@ -12,7 +12,7 @@ $result = $db_connection->query(
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>cats on cats on cats</title>
+	<title>Happy Hammock</title>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
 	<link rel="stylesheet" href="style.css">

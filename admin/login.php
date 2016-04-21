@@ -10,31 +10,36 @@
 <body>
 	<div class="container">
 		<div class="row">
+
 			<form method="post" action="login-action.php" class="col s6 push-s3">
+				
 				<div class="card white ">
-            	<div class="card-content black-text">
-            	<h3 class="card-title">Happy Hammock Login</h3>
-				<div class="row">
-					<div class="input-field col s12">
-						<input name="Username" placeholder="Username" id="Username" type="text" class="validate">
-						<label for="Username">Username</label>
+	            	<div class="card-content black-text">
+		            	<h3 class="card-title">Happy Hammock Login</h3>
+						
+						<div class="row">
+							<div class="input-field col s12">
+								<input name="Username" placeholder="Username" id="Username" type="text" class="validate">
+								<label for="Username">Username</label>
+							</div>
+						</div>
+
+
+						<div class="row">
+							<div class="input-field col s12">
+								<input name="Password" placeholder="Password" id="Password" type="password" class="validate">
+								<label for="Password">Password</label>
+							</div>
+						</div>
+
+						<button type="submit" class="waves-effect waves-light btn orange lighten-3">Login</button>
+
+						<a class="waves-effect waves-light btn orange lighten-3" href="../index.php">Back</a>
 					</div>
 				</div>
 
-
-				<div class="row">
-					<div class="input-field col s12">
-						<input name="Password" placeholder="Password" id="Password" type="password" class="validate">
-						<label for="Password">Password</label>
-					</div>
-				</div>
-
-				<button type="submit" class="waves-effect waves-light btn orange lighten-3">Login</button>
-
-				<a class="waves-effect waves-light btn orange lighten-3" href="../index.php">Back</a>
-			</div>
-			</div>
 			</form>	
+
 		</div>
 	</div>
 

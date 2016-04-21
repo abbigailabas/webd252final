@@ -29,7 +29,7 @@ $item = $result->fetch_assoc();
  <html lang="en">
  <head>
  	<meta charset="UTF-8">
- 	<title>Document</title>
+ 	<title>Happy Hammock</title>
  	<link rel="stylesheet" href="style.css">
  	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">

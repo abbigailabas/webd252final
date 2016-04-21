@@ -49,15 +49,17 @@
  <html lang="en">
  <head>
  	<meta charset="UTF-8">
- 	<title>Document</title>
+ 	<title>Happy Hammock</title>
  </head>
  <body>
+	
 	<div class="container">
 		<div class="row">
-			<h1>cat dog added</h1>
+			<h1>Product Added!</h1>
 			<a href="index.php">back to menu</a> <!-- index menu in the admin folder -->
 		</div>
 	</div>	
+ 
  </body>
  </html>
 
