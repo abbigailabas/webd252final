@@ -34,10 +34,16 @@ $statement->execute();
 <body>
 
 	<div class="container">
+		
 		<div class="row">
+
 	 		<h1>New Hammock Product Added!</h1>
-	 		<a href="index.php" class="waves-effect waves-light btn orange lighten-3">back to menu</a> <!-- index menu in the admin folder -->
+
+	 		<a href="index.php" class="waves-effect waves-light btn orange lighten-3">back to menu</a> 
+	 		<!-- index menu in the admin folder -->
+		
 		</div>
+
 	</div>
 
 </body>

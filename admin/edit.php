@@ -33,42 +33,64 @@ $item = $result->fetch_assoc();
 		<form method="post" action="edit-action.php" class="col s12">
 
 			<div class="row">
+		
 				<div class="input-field col s6">
+		
 					<input name="Title" placeholder="Title" id="Title" type="text" class="validate" value="<?php echo $item['Title']; ?>">
+		
 					<label for="Title">Product Title</label>
+		
 				</div>
+		
 			</div>
 
 			<div class="row">
+		
 				<div class="input-field col s12">
+		
 					<textarea id="ShortDescription" class="materialize-textarea" name="Short_Description"><?php echo $item['Short_Description']; ?></textarea>
+		
 					<label for="ShortDescription">Short Description</label>		
+		
 				</div>
+		
 			</div>
 
 			<div class="row">
+		
 				<div class="input-field col s12">
-					<textarea id="LongDescription" class="materialize-textarea" name="Long_Description"><?php echo $item['Long_Description']; ?></textarea>
+		
+					<textarea id="LongDescription" class="materialize-textarea" name="Long_Description">
+					<?php echo $item['Long_Description']; ?></textarea>
+					
 					<label for="LongDescription">Long Description</label>	
 				</div>
+		
 			</div>
 
 			<!-- Upload image for post -->
 			<div class="row">
+      	
       			<div class="file-field input-field">
+        
         			<div class="btn">
+        
          				<span>image</span>
-         				<input id="image" name="image" type="file" accept="image/*" placeholder="test" required>
+        
+         				<input id="image" name="image" type="file" accept="image/*" placeholder="test" 
+         				required>
+       			 	
        			 	</div>
+       				
        				<div class="file-path-wrapper">
+         			
          				<input class="file-path validate" type="text" placeholder="test">
+        			
         			</div>
+     	
      			</div>
+		
 			</div>
-
-
-
-
 
 			<input name="ID" type="hidden" value="<?php echo $item['ID']; ?>">
 

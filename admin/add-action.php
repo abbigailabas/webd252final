@@ -54,10 +54,15 @@
  <body>
 	
 	<div class="container">
+		
 		<div class="row">
+		
 			<h1>Product Added!</h1>
+		
 			<a href="index.php">back to menu</a> <!-- index menu in the admin folder -->
+		
 		</div>
+	
 	</div>	
  
  </body>
