@@ -39,7 +39,7 @@ $result = $db_connection->query(
 						
 						<a href = "detail.php?ID=<?php echo $item['ID']?>">
 						
-							<img class="productImage responsive-img s6" src="imgs/cntower.jpeg" alt="">
+							<img class="productImage responsive-img s6" src="../uploads/<?php echo $item['Large_Image'] ?>">
 							
 							<div class="right-align">
 								<h3> <?php echo $item['Title']; ?> </h3>
@@ -54,7 +54,7 @@ $result = $db_connection->query(
 				<?php endwhile; ?>
 
 				<!-- button to RENE.php -->
-				<a class="waves-effect waves-light btn orange lighten-3" href="RENE.php">RENE.php</a>
+				<!-- <a class="waves-effect waves-light btn orange lighten-3" href="RENE.php">RENE.php</a> -->
 
 			</ul>	
 		</div>
