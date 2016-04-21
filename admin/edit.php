@@ -56,15 +56,15 @@ $item = $result->fetch_assoc();
 
 			<div class="row">
 				 <!-- upload image for post -->
-      <div class="file-field input-field">
-        <div class="btn">
-          <span>image</span>
-          <input id="image" name="image" type="file" accept="image/*" placeholder="test" required>
-        </div>
-        <div class="file-path-wrapper">
-          <input class="file-path validate" type="text" placeholder="test!">
-        </div>
-      </div>
+      			<div class="file-field input-field">
+        			<div class="btn">
+         				<span>image</span>
+         				<input id="image" name="image" type="file" accept="image/*" placeholder="test" required>
+       			 	</div>
+       				<div class="file-path-wrapper">
+         				<input class="file-path validate" type="text" placeholder="test">
+        			</div>
+     			</div>
 			</div>
 
 

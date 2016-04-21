@@ -39,7 +39,7 @@ $result = $db_connection->query(
 						
 						<a href = "detail.php?ID=<?php echo $item['ID']?>">
 						
-							<img class="productImage responsive-img s6" src="../uploads/<?php echo $item['Large_Image'] ?>">
+							<img class="productImage responsive-img s6" src="uploads/<?php echo $item['Large_Image'] ?>">
 							
 							<div class="right-align">
 								<h3> <?php echo $item['Title']; ?> </h3>

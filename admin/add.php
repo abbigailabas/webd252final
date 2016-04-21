@@ -1,6 +1,4 @@
 <?php 
-
-
 include('login-check.php');
 include('commons/head.php');
 

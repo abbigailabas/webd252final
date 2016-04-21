@@ -40,7 +40,7 @@ $item = $result->fetch_assoc();
  		<div class="container">
 	 		<h1><?php echo $item['Title']; ?></h1>
 	 		
-	 		<img class="detailImage" src="../uploads/<?php echo $item['Large_Image'] ?>">
+	 		<img class="detailImage" src="uploads/<?php echo $item['Large_Image'] ?>">
 	 		<p><?php echo $item['Short_Description']; ?></p>
 	 		<p><?php echo $item['Long_Description']; ?></p>
 

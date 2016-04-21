@@ -1,34 +1,28 @@
 <?php 
-
-
 	// var_dump($_POST);
 	// include('login-check.php');
 	include('../database.php');
 
 
-if(!empty($_FILES['image']['name'])) {
+	if(!empty($_FILES['image']['name'])) {
 
-  //get file extension of file
-  $ext = pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
+	  //get file extension of file
+	  $ext = pathinfo($_FILES['image']['name'], PATHINFO_EXTENSION);
 
-  //random filename with username follwed by filename extension
-  session_start();
-  $filename = $_SESSION['username'] . rand(0, 100000) . '.' .$ext;
-  move_uploaded_file(
-    $_FILES['image']['tmp_name'],
-    // $target_path
-    // '../uploads/' . $_FILES['f_image']['name']
-    '../uploads/' . $filename
-  );
+	  //random filename with username follwed by filename extension
+	  session_start();
+	  $filename = $_SESSION['username'] . rand(0, 100000) . '.' .$ext;
+	  move_uploaded_file(
+	    $_FILES['image']['tmp_name'],
+	    // $target_path
+	    // '../uploads/' . $_FILES['f_image']['name']
+	    '../uploads/' . $filename
+	  );
 
-  $statement = $db_connection->prepare("INSERT INTO Content(Large_Image) VALUES (?)");
-
-
-$statement->bind_param("s", $filename);
+	  $statement = $db_connection->prepare("INSERT INTO Content(Large_Image) VALUES (?)");
 
 
-
-
+	$statement->bind_param("s", $filename);
 }
 
 
@@ -58,8 +52,12 @@ $statement->bind_param("s", $filename);
  	<title>Document</title>
  </head>
  <body>
- 	<h1>cat dog added</h1>
- 	<a href="index.php">back to menu</a> <!-- index menu in the admin folder -->
+	<div class="container">
+		<div class="row">
+			<h1>cat dog added</h1>
+			<a href="index.php">back to menu</a> <!-- index menu in the admin folder -->
+		</div>
+	</div>	
  </body>
  </html>
 
