@@ -53,9 +53,8 @@ $item = $result->fetch_assoc();
 				</div>
 			</div>
 
-
+			<!-- Upload image for post -->
 			<div class="row">
-				 <!-- upload image for post -->
       			<div class="file-field input-field">
         			<div class="btn">
          				<span>image</span>
